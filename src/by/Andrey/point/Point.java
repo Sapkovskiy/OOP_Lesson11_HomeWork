@@ -28,8 +28,8 @@ public class Point {
 
 
     public double distance(Point point){
-        double a = Math.pow(point.x,2);
-        double b = Math.pow(point.y,2);
+        double a = Math.pow(x-point.x,2);
+        double b = Math.pow(y-point.y,2);
         return Math.sqrt(a+b);
     }
 

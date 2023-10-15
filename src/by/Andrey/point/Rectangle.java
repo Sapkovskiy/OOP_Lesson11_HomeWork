@@ -9,7 +9,12 @@ public class Rectangle {
         this.RightUpperCorner=RightUpperCorner;
     }
     public double getDiagonal(){
-
+        double a = LeftLowCorner.distance(RightUpperCorner);
+        return a;
+    }
+    public int getArea(){
+        int a = (LeftLowCorner.getX()-RightUpperCorner.getX())*(LeftLowCorner.getY()-RightUpperCorner.getY());
+        return a;
     }
 
 }
